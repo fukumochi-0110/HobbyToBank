@@ -1,0 +1,12 @@
+.home-top, .home-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-sub-title {
+  padding-left: 10px;
+}
+
