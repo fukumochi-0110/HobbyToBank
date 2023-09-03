@@ -1,2 +1,19 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="home-header">
+  <div>
+    <%= link_to "新規登録", new_user_registration_path %>
+    <%= link_to "ログイン", new_user_session_path %>
+  </div>
+</div>
+
+<div class="home-top">
+  <h1>HobbyToBank</h1>
+  <div class="home-sub-title">楽しんだら貯金しろ</div>
+</div>
+
+<div class="home-middle">
+  <div>あなたの趣味で過ごした時間や達成感を、貯金として積み上げましょう。</div>
+</div>
+
+<div class="home-footer">
+  <div>始めるには、<%= link_to "新規登録", new_user_registration_path %>  または  <%= link_to "ログイン", new_user_session_path %>  をしてください。</div>
+</div>
