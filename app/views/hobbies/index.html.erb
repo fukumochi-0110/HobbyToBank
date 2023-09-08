@@ -1,1 +1,15 @@
-<h1>ホビーだよ</h1>
+<div>
+  <% @hobby.each do |hobby| %>
+    <div>
+      <%= hobby.hobby %>
+      <%= "#{hobby.price}円" %>
+    </div>
+  <% end %>
+  <!-- バンクコントローラーをつくったら実装する-->
+  <%# <%= button_to "Done!!", {controller: 'mypages', action: 'index'}, {method: :get} %> 
+ 
+</div>
+
+<div>
+  <%= link_to "趣味登録" , new_hobby_path %>
+</div>
